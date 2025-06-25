@@ -1,0 +1,1069 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    position: sticky;
+    /* 📌 fix the header */
+    top: 0;
+    /* stick to top */
+    left: 0;
+    background-color: white;
+    /* white bg to avoid transparency */
+    z-index: 999;
+    /* stay above all other content */
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+}
+
+.header-bothpadding {
+    padding: 20px 20px;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    width: 33%;
+    display: flex;
+    gap: 5px;
+}
+
+.header-icon {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.logo {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo h4 {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.button {
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.button .btn1 {
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid transparent;
+    padding: 6px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+
+}
+
+.btn2 {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: white;
+    padding: 6px 12px;
+}
+
+.btn2:hover {
+    background-color: black;
+    color: white;
+}
+
+.button .fa-user {
+    display: none;
+}
+
+@media screen and (max-width: 599px) {
+
+    .btn1,
+    .btn2 {
+        display: none;
+    }
+
+    .button .fa-user {
+        font-size: 20px;
+        display: inline-block;
+    }
+
+    .logo h4 {
+        color: white;
+        background-color: black;
+        padding: 3px 6px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/*.........................................section 2 ............................*/
+.navbar {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 12px 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 12px 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    letter-spacing: 0px;
+    position: relative;
+}
+
+ul li a:hover {
+
+    background-color: #E6E8EA;
+}
+
+.navbar a.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+@media screen and (max-width: 1007px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/*..............................................section 3.........................*/
+.Live_trumpSpeculates {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Liveicon {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.view {
+    border: 2px solid rgb(235, 0, 0);
+    border-radius: 100%;
+    padding: 3px 3px;
+    background-color: rgb(235, 0, 0);
+}
+
+.oneMore_border {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(235, 0, 0);
+    padding: 1px 3px;
+    border-radius: 100%;
+}
+
+.Liveicon {
+    color: rgb(235, 0, 0);
+}
+
+.live-para {
+    color: rgb(32, 34, 36);
+    text-align: center;
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 400;
+    font-size: 56px;
+    padding-top: 20px;
+    padding-inline: 76px;
+}
+
+.live-para:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1009px) {
+    .live-para {
+        font-size: 40px;
+        padding-inline: 66px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .live-para {
+        font-size: 30px;
+        padding-inline: 20px;
+    }
+}
+
+/*.................................... second point ......................*/
+.section4 {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+
+.strickes {
+    width: 80%;
+    display: flex;
+
+}
+
+.strick_img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.strickes img {
+    width: 722px;
+    height: 402px;
+}
+
+.stricks_content {
+    width: 30%;
+}
+
+.stricks_content .box_1 {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 20px 20px;
+    color: black;
+    padding: 20px 20px 20px 40px;
+    /* left padding added for bullet space */
+    position: relative;
+    /* required for pseudo-element */
+}
+
+.stricks_content .box_1 h2 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+}
+
+.stricks_content a {
+    text-decoration: none;
+}
+
+/* 🔴 Bullet circle via ::before */
+.stricks_content .box_1::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    /* adjust vertically */
+    left: 20px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.stricks_content .box_1:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+@media screen and (max-width: 1500px) {
+    .strickes {
+        width: 90%;
+    }
+
+    .strickes img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .stricks_content {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .strickes {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .strickes {
+        width: 80%;
+        display: flex;
+    }
+
+    .strick_img {
+        width: 100%;
+    }
+
+    .strickes img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .stricks_content {
+        width: 100%;
+
+    }
+}
+
+/* .............................watch Section 5 watch video */
+.section5 {
+    background-color: black;
+    margin-top: 60px;
+    padding: 50px 0px;
+
+}
+
+.watch {
+    width: 80%;
+    border-top: 2px solid white;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.watch button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+
+/* .............. ............................card parent */
+.card_parent {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.watch_card1full {
+    margin-top: 30px;
+    width: 20%;
+    margin-right: 16px;
+}
+
+.watchcard1 {
+    position: relative;
+
+}
+
+.watchcard1 .fa-youtube {
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    font-size: 40px;
+    color: #000000;
+    /* YouTube red */
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.watchcard1 img {
+    width: 270px;
+    height: 152px;
+}
+
+.watchcard1_content {
+    color: white;
+    line-height: 18px;
+    letter-spacing: 0px;
+
+}
+
+.watchcard1_content h3 {
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.watchcard1_content h3:hover {
+    text-decoration: underline;
+}
+
+.watchcard1_content p {
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.watchcard_hours {
+    color: gray;
+    border-right: 2px solid gray;
+    padding-right: 10px;
+}
+
+.watchcard_hoursworlds {
+    color: gray;
+    padding-left: 10px;
+}
+
+/* ................................####################................ */
+.card_parent {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.watch_card1full {
+    width: 270px;
+}
+
+/* ....................................section 6.................................. */
+.section6 {
+    margin-top: 30px;
+}
+
+.stories {
+    margin: auto;
+    width: 85%;
+    border-top: 3px solid black;
+}
+
+.storiesbox_parent {
+    display: flex;
+    gap: 16px;
+}
+
+.stories_box1 {
+    /* width: 32%; */
+}
+
+.storiescard1 img {
+    width:303px;
+    height: 170px;
+}
+
+.watch_card1full11 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+
+
+}
+
+
+.stories h2 {
+    color: rgb(32, 34, 36);
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+.stories_content {
+    color: rgb(32, 34, 36);
+
+    line-height: 18px;
+    letter-spacing: 0px;
+
+}
+
+.stories_content h3 {
+    letter-spacing: -0.36px;
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.stories_content p {
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-size: 14px;
+    padding: 12px 0px;
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: rgb(32, 34, 36);
+}
+
+.stories_content h3:hover {
+    text-decoration: underline;
+}
+
+.stories_hours {
+
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: -0.12px;
+    color: rgb(84, 86, 88);
+    border-right: 2px solid black;
+    padding-right: 10px;
+
+}
+
+.stories_hoursworlds {
+
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: -0.12px;
+    color: rgb(84, 86, 88);
+    padding-left: 10px;
+
+}
+.box1_box2{
+    /* width: 75%; */
+    display: flex;
+    gap: 16px;
+}
+
+/* ..........................................box 2 .......................... */
+.stories_box2 {
+    /* width: 65%; */
+}
+
+.stories_mid_box2 img {
+    width: 605px;
+    height: 300px;
+}
+
+.stories_contentbox3 h3 {
+
+    
+    color: rgb(32, 34, 36);
+    /* font-family: "BBC Reith Serif",s BBCReithSerif-fallback, serif; */
+    font-weight: 550;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: -0.56px;
+    overflow-wrap: anywhere;
+    padding: 20px 0px;
+}
+
+.stories_contentbox3 p {
+
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: rgb(32, 34, 36);
+    margin-bottom: 10px;
+}
+
+/* ...........................................box 3........................ */
+.stories_box3 {
+    /* width: 25%;s */
+}
+
+.stories_card1full1 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+    
+}
+/* responsive  */
+@media screen and (max-width: 1300px) {
+    .stories {
+    margin: auto;
+    width: 95%;
+    border-top: 3px solid black;
+}
+    }
+@media screen and (max-width: 1200px) {
+    .storiesbox_parent {
+    flex-direction: column;
+    gap: 16px;
+}
+
+    .stories {
+    margin: auto;
+    width: 85%;
+    border-top: 3px solid black;
+}
+.box1_box2 {
+    width: 100%;
+   
+}
+.stories_box3{
+    display: flex;
+    gap: 20px;
+}
+
+.stories_card1full1 {
+   
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+.stories_mid_box2 img {
+    width: 500px;
+    height: 300px;
+}
+.storiescard1 img {
+    width:100%;
+    height: 100%;
+}
+    
+}
+@media screen and (max-width: 900px) {
+
+    .stories {
+    width: 90%;
+}
+.stories_mid_box2 img {
+    width: 100%;
+    height: 100%;
+}
+}
+@media screen and (max-width: 600px) {
+    .box1_box2 {
+    display: none;
+   
+}
+.stories_box3{
+   flex-direction: column;
+    gap: 0px;
+}
+.stories_card1full1 {
+   
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}}
+/* ...........box2 top py
+ */
+ .stories_content_screen600 {
+  display: none;
+}
+.watch_card1full11_screen600{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .stories_content_screen600 {
+    display: block;
+
+  }
+  .stories_content_screen600{
+    border-bottom: 1px solid gray ;
+    padding-bottom: 25px;
+
+  }
+  .stories_mid_box2screen600 img{
+    width: 100%;
+    height: 100%;
+  }
+  .stories_contentbox3screen600 h3{
+    ont-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: -0.48px;
+        margin-top: 10px;
+  }
+  .stories_contentbox3screen600 p{
+       font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        margin-bottom: 0px;
+        margin: 15px 0px;
+  }
+/* card1 */
+.watch_card1full11_screen600{
+    display: flex ;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.storiescard1screen600 img{
+width: 132px;
+height: 80px;
+}
+.stories_contentscreen600 h3{
+font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: -0.36px;
+        margin-bottom: 10px;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .storiescard1screen600 img {
+        width: 132px;
+        height: 123px;
+    }}
+    /* .................................section 7.................................. */
+    .section7 {
+    margin-top: 30px;
+}
+
+.FilmTv{
+    margin: auto;
+    width: 85%;
+    border-top: 3px solid black;
+}
+.FilmTv h2{
+
+color: rgb(32, 34, 36);
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.FilmTv h2:hover{
+    text-decoration: underline;
+}
+.FilmTv .fa-angle-right{
+    padding-left: 5px;
+    font-size: 15px;
+
+}
+.FilmTv_card{
+    display: flex ;
+    /* gap: 20px; */
+    align-items: center;    
+}
+.FILMtV_IMG {
+    width: 140%;
+}
+.FILMtV_IMG img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+.FilmTvcontent{
+    padding: 16px;
+}
+.FilmTv_card h3{
+    color: rgb(32, 34, 36);
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: -0.56px;
+}
+.FilmTv_card p{
+    
+    color: rgb(32, 34, 36);
+    font-family: "BBC Reith Serif", BBCReithSerif-fallback, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin: 15px 0px;
+}
+.FilmTv_card button{
+    cursor: pointer;
+    border: 2px solid black;
+    align-items: center;
+    padding: 6px 12px;
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+   background-color: white;
+    letter-spacing: 0px;
+    margin-top: 15px;
+}
+/* responsive */
+@media screen and (max-width: 1340px) {
+.FilmTv{
+    width: 95%;
+}
+.FILMtV_IMG {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1008px) {
+.FilmTv{
+    width: 85%;
+}
+.FilmTv_card{
+    flex-direction: column;  
+}
+}
+/* section 8................. */
+
+
+/* sectiion 9 Footer  */
+.section9{
+    padding-top: 10px;
+}
+.Footer{  
+    max-width: 1280px;
+    width: 100%;
+    margin: 16px auto 48px;
+    padding: 0px 16px;
+   
+    
+
+}
+
+
+.logoFooter {
+    width: 33%;
+    display: flex;
+    gap: 10px;
+    padding-left: 5px;
+
+}
+
+.logoFooter h4 {
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.navbarFooter ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+.navbarFooter ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    letter-spacing: 0px;
+    
+    
+}
+.navbarFooter ul li a:hover{
+    text-decoration: underline;
+    background-color: white;
+}
+.Footer_button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.Footer_button button{
+cursor: pointer;
+    height: 44px;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: rgb(230, 232, 234);
+    color: rgb(32, 34, 36);
+    font-family: "BBC Reith Sans", BBCReithSans-fallback, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    border: none;
+}
+   .Footer_button .fa-chevron-down{
+    padding-left: 10px;
+     font-weight: 600;
+    font-size: 14px;
+   }
+   .Footer_button button:hover{
+background-color: #d2d4d6;
+   }
+/* footer icons */
+.Footer_icons{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid gray;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+    
+.Footer_box2{
+    padding-left: 20px;
+}
+
+.Footer_box2 .fab{
+    margin: auto;
+    font-size: 16px ;
+    padding: 5px;
+    color: #000000;
+
+}
+.Footer_box2 .fab:hover{
+    border: 1px solid black;
+}
+/* polices */
+
+.Footerpolices ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.Footerpolices ul li  {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    letter-spacing: 0px;
+    
+    
+}
+.Footerpolices ul li:hover{
+    text-decoration: underline;
+    background-color: white;
+}
+.copywrite_footer p{
+font-size: 12px;
+padding-top: 20px;
+}
+
+/* 🔻 Responsive Styles Start */
+@media screen and (max-width: 1024px) {
+  .navbarFooter ul {
+    flex-wrap: wrap;  /* 🔸Add kiya */
+    gap: 10px;         /* 🔸Change kiya */
+  }
+    .Footer_icons{
+    justify-content: center;
+  }
+
+  .Footerpolices ul {
+    flex-wrap: wrap;   /* 🔸Add kiya */
+    gap: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .logoFooter {
+    width: 100%;         /* 🔸Change kiya */
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .navbarFooter ul {
+    flex-direction: column;  /* 🔸Change kiya */
+    align-items: center;
+    gap: 8px;
+  }
+
+  .Footer_button {
+    justify-content: center;
+  }
+
+  .Footer_icons {
+    align-items: center;
+  }
+
+  .Footer_box2 {
+    padding-left: 0px;  /* 🔸Change kiya */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .Footer_box2 .fab {
+    font-size: 20px;    /* 🔸Change kiya */
+  }
+
+  .Footerpolices ul {
+    flex-direction: column;  /* 🔸Change kiya */
+    align-items: center;
+  }
+
+  .Footerpolices ul li {
+    font-size: 13px;    /* 🔸Minor size adjust */
+  }
+
+  .copywrite_footer p {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Footer_button button {
+    width: 100%;
+    text-align: center;
+  }
+.Footer_icons {
+    flex-direction: column;  /* 🔸Change kiya */
+    align-items: center; /* 🔸Change kiya */
+    gap: 10px;
+  }
+  .navbarFooter ul li a {
+    font-size: 13px;
+  }
+
+  .Footerpolices ul li {
+    font-size: 12px;
+  }
+}
+/* 🔺 Responsive Styles End */
